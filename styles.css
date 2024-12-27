@@ -16,7 +16,7 @@ ul {
 
 button {
     background-color: #3882f6;
-    color: #fff;
+    color: #f9faf8;
     padding: 10px;
     border-radius: 8px;
 }
@@ -25,6 +25,8 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+/* header section */
 
 .header, .hero-block, .footer {
     background-color: #1F2937;
@@ -47,11 +49,13 @@ button {
     font-size: 24px;
 }
 
+/* hero section  */
+
 .hero-block {
     display: flex;
     justify-content: center;
     min-height: 150px;
-    padding: 50px;
+    padding: 50px 10%;
     gap: 50px;
 }
 
@@ -71,9 +75,13 @@ button {
 }
 
 .hero-left, .hero-right {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    /* max-width: 30%; */
+    gap: 10px;
 }
+
+/* info section */
 
 .info-block { 
     display: flex;
@@ -107,6 +115,8 @@ button {
     border: 2px solid blue;
 }
 
+/* quote section */
+
 .quote-block {
     display: flex;
     justify-content: center;
@@ -132,21 +142,43 @@ button {
     text-align: right;
 }
 
+/* call to action section */
+
 .action-block {
     display: flex;
-    justify-content: center;
-    padding: 50px;
+    padding: 50px 10%;
     min-height: 150px;
+    align-items: center;   
 }
 
 .action-card {
+    flex: 1;
     background-color: #3882f6;
-    padding: 25px;
+    color: #f9faf8;
+    padding: 50px 100px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
 }
+
+.action-card button {
+    border: #f9faf8 1px solid;
+    padding: 5px 25px;
+}
+
+.action-card p {
+    margin-top: 3px;
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+/* footer section  */
 
 .footer {
     display: flex;
     height: 50px;
+    color: #f9faf8;
     align-items: center;
     justify-content: center;
 }
