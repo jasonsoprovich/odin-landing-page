@@ -14,21 +14,6 @@ ul {
     gap: 20px;
 }
 
-h1 {
-    color: #f9faf8;
-    font-size: 48px;
-}
-
-h2 {
-    color: #f9faf8;
-    font-size: 24px;
-}
-
-a {
-    color: #f9faf8;
-    text-decoration: none;
-}
-
 button {
     background-color: #3882f6;
     color: #fff;
@@ -41,7 +26,6 @@ button {
     flex-direction: column;
 }
 
-
 .header, .hero-block, .footer {
     background-color: #1F2937;
     color: #f9faf8;
@@ -50,7 +34,17 @@ button {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px 10%;
+}
+
+.header a {
+    color: #f9faf8;
+    text-decoration: none;
+}
+
+.header-logo {
+    color: #f9faf8;
+    font-size: 24px;
 }
 
 .hero-block {
@@ -58,13 +52,34 @@ button {
     justify-content: center;
     min-height: 150px;
     padding: 50px;
+    gap: 50px;
+}
+
+.hero-block h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-block p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero-block button {
+    border: none;
+}
+
+.hero-left, .hero-right {
+    flex: 1;
+    /* max-width: 30%; */
 }
 
 .info-block { 
     display: flex;
     flex-direction: column;
-    padding: 50px;
     min-height: 150px;
+    margin: 35px;
 }
 
 .info-title {
@@ -73,18 +88,21 @@ button {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin: 30px;
+    margin-bottom: 30px;
 }
 .info-container {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
 }
 
+.info-image {
+    height: 100px;
+}
+
 .info-card {
-    width: 200px;
+    width: 175px;
     padding: 20px;
     border: 2px solid blue;
 }
@@ -131,5 +149,4 @@ button {
     height: 50px;
     align-items: center;
     justify-content: center;
-    /* margin-top: auto; */
 }
