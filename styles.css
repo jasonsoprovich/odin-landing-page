@@ -102,7 +102,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
 }
 
 .info-image {
@@ -110,9 +110,13 @@ button {
 }
 
 .info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 175px;
     padding: 20px;
-    border: 2px solid blue;
+    align-items: center;
+    text-align: center;
 }
 
 /* quote section */
