@@ -30,7 +30,6 @@ button {
 
 .header, .hero-block, .footer {
     background-color: #1F2937;
-    color: #f9faf8;
 }
 
 .header {
@@ -70,15 +69,29 @@ button {
     font-size: 18px;
 }
 
-.hero-block button {
-    border: none;
+.hero-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
 }
 
-.hero-left, .hero-right {
+.hero-left button {
+    padding: 8px 25px;
+    border: none;
+    align-self: flex-start;
+}
+
+.hero-right {
     display: flex;
-    flex-direction: column;
     flex: 1;
-    gap: 10px;
+}
+
+.hero-image {
+    width: 200px;
+    align-self:flex-start;
+    flex: 1;
 }
 
 /* info section */
@@ -168,7 +181,7 @@ button {
 
 .action-card button {
     border: #f9faf8 1px solid;
-    padding: 5px 25px;
+    padding: 8px 25px;
 }
 
 .action-card p {
