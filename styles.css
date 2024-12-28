@@ -19,6 +19,11 @@ button {
     color: #f9faf8;
     padding: 10px;
     border-radius: 8px;
+    
+}
+
+button:hover {
+    background-color:#5d95f0;
 }
 
 .container {
@@ -41,6 +46,10 @@ button {
 .header a {
     color: #f9faf8;
     text-decoration: none;
+}
+
+a:hover {
+    color: #EE7F76;
 }
 
 .header-logo {
@@ -74,7 +83,7 @@ button {
     flex: 1;
     flex-direction: column;
     margin: 0;
-    gap: 10px;
+    gap: 15px;
 }
 
 .hero-left button {
