@@ -26,21 +26,22 @@ button:hover {
     background-color:#5d95f0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
+.content-wrapper{
+    width: 65%;
+    margin: 0 auto;   
 }
 
 /* header section */
 
 .header, .hero-block, .footer {
     background-color: #1F2937;
+    width: 100%;
 }
 
-.header {
+.header-content {
     display: flex;
     justify-content: space-between;
-    padding: 20px 10%;
+    padding: 20px 0;
 }
 
 .header a {
@@ -59,23 +60,23 @@ a:hover {
 
 /* hero section  */
 
-.hero-block {
-    display: flex;
-    justify-content: center;
-    min-height: 150px;
-    padding: 50px 10%;
-    gap: 50px;
-}
-
-.hero-block h1 {
+.hero-container h1 {
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
 }
 
-.hero-block p {
+.hero-container p {
     color: #e5e7eb;
     font-size: 18px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    padding: 50px 0;
+    gap: 50px;
 }
 
 .hero-left, 
@@ -99,6 +100,7 @@ a:hover {
 .hero-right {
     justify-content: right;
 }
+
 .hero-image {
     width: 100%;
     max-width: 500px;
@@ -111,7 +113,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     min-height: 150px;
-    margin: 35px;
+    padding: 50px 0;
 }
 
 .info-title {
@@ -138,7 +140,7 @@ a:hover {
     flex-direction: column;
     gap: 15px;
     width: 175px;
-    padding: 20px;
+    padding: 20px 0;
     align-items: center;
     text-align: center;
 }
@@ -146,16 +148,9 @@ a:hover {
 /* quote section */
 
 .quote-block {
-    display: flex;
-    justify-content: center;
     background-color: #e5e7eb;
-    padding: 50px;
+    padding: 50px 0;
     min-height: 150px;
-}
-
-.quote-card {
-    max-width: 60%;
-    flex: 1;
 }
 
 .quote-text {
@@ -163,6 +158,7 @@ a:hover {
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
+    margin-bottom: 15px;
 }
 
 .quote-signature {
@@ -174,7 +170,7 @@ a:hover {
 
 .action-block {
     display: flex;
-    padding: 50px 10%;
+    padding: 50px 0;
     min-height: 150px;
     align-items: center;   
 }
@@ -184,7 +180,7 @@ a:hover {
     flex: 1;
     background-color: #3882f6;
     color: #f9faf8;
-    padding: 50px 100px;
+    padding: 50px 75px;
     border-radius: 8px;
     justify-content: space-between;
     align-items:flex-end;
@@ -197,7 +193,7 @@ a:hover {
 }
 
 .action-card p {
-    margin-top: 3px;
+    margin-top: 5px;
     font-weight: 300;
     font-size: 0.75em;
 }
