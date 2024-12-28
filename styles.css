@@ -1,11 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Roboto, sans-serif;
-    box-sizing: border-box;
 }
 
 ul {
@@ -19,7 +19,7 @@ button {
     color: #f9faf8;
     padding: 10px;
     border-radius: 8px;
-    
+    text-wrap: nowrap;    
 }
 
 button:hover {
@@ -78,9 +78,13 @@ a:hover {
     font-size: 18px;
 }
 
-.hero-left {
+.hero-left, 
+.hero-right {
     display: flex;
     flex: 1;
+}
+
+.hero-left {
     flex-direction: column;
     margin: 0;
     gap: 15px;
@@ -93,14 +97,12 @@ a:hover {
 }
 
 .hero-right {
-    display: flex;
-    flex: 1;
+    justify-content: right;
 }
-
 .hero-image {
-    width: 200px;
+    width: 100%;
+    max-width: 500px;
     align-self:flex-start;
-    flex: 1;
 }
 
 /* info section */
@@ -178,14 +180,14 @@ a:hover {
 }
 
 .action-card {
-    flex: 1;
+    flex: 1 1 auto;
     background-color: #3882f6;
     color: #f9faf8;
     padding: 50px 100px;
     border-radius: 8px;
     display: flex;
-    justify-content: space-between;
     align-items:flex-end;
+    gap: 75px;
 }
 
 .action-card button {
@@ -203,7 +205,7 @@ a:hover {
 
 .footer {
     display: flex;
-    height: 50px;
+    padding: 25px;
     color: #f9faf8;
     align-items: center;
     justify-content: center;
